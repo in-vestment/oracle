@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#f1f3f6" name="theme-color"/>
+  <meta content="Historical five-year monthly SIP simulation of Safed Pigeon five-fund portfolio, including fund-level results." name="description"/>
+  <title>
+   Five-Year SIP Backtest &mdash; Safed Pigeon
+  </title>
+  <link href="logo.jpg" rel="icon" type="image/jpeg"/>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header>
+   <nav aria-label="Main navigation" class="nav">
+    <a class="brand" href="./">
+     <img alt="Safed Pigeon logo" src="logo.jpg"/>
+     <span>
+      Safed Pigeon
+     </span>
+    </a>
+    <div class="navlinks">
+     <a href="./">
+      Home
+     </a>
+     <a href="./#core">
+      Core Portfolio
+     </a>
+     <a href="./#philosophy">
+      Philosophy
+     </a>
+     <a href="./#research">
+      Research
+     </a>
+     <a class="hide-mobile" href="./#about">
+      About
+     </a>
+    </div>
+    <a class="nav-cta" href="https://www.facebook.com/safed.pigeon.5" rel="noopener noreferrer" target="_blank">
+     Facebook &nearrow;
+    </a>
+   </nav>
+  </header>
+  <main class="wrap">
+   <div class="prose">
+    <article class="card">
+     <div class="kicker">
+      October 2026 &middot; Historical simulation
+     </div>
+     <h1>
+      Five Years of Systematic Investing
+     </h1>
+     <p>
+      This backtest revisits the five-fund equity mutual fund portfolio originally constructed in November 2020. It models a
+      <strong>
+       ₹1 lakh monthly SIP over five years
+      </strong>
+      , distributed according to the original target weights.
+     </p>
+     <div class="stat">
+      <span class="note">
+       Reported overall XIRR
+      </span>
+      <b>
+       &asymp;18%
+      </b>
+      <span class="note">
+       Hypothetical backtest, not actual live returns. The precise transaction dates, NAV series, rebalancing treatment, fees, and XIRR calculation have not been independently verified.
+      </span>
+     </div>
+     <div class="metricgrid">
+      <div class="metric">
+       <b>
+        ₹60.00L
+       </b>
+       <span>
+        Simulated SIP contributions
+       </span>
+      </div>
+      <div class="metric">
+       <b>
+        ₹94.37L
+       </b>
+       <span>
+        Sum of displayed ending fund values
+       </span>
+      </div>
+      <div class="metric">
+       <b>
+        18%
+       </b>
+       <span>
+        Reported portfolio XIRR (approx.)
+       </span>
+      </div>
+     </div>
+     <h2>
+      Per-fund breakdown
+     </h2>
+     <p>
+      The figures below are transcribed from the uploaded backtest screenshot. Invested and ending values are in lakh rupees (₹L).
+     </p>
+     <div class="table-scroll">
+      <table class="fund-table performance-table">
+       <thead>
+        <tr>
+         <th>
+          Fund
+         </th>
+         <th>
+          Invested
+          <br/>
+          ₹ lakh
+         </th>
+         <th>
+          Value
+          <br/>
+          ₹ lakh
+         </th>
+         <th>
+          XIRR
+         </th>
+         <th>
+          Alpha
+         </th>
+         <th>
+          Beta
+         </th>
+         <th>
+          R&sup2;
+         </th>
+         <th>
+          Sharpe
+         </th>
+         <th>
+          Sortino
+         </th>
+         <th>
+          Volatility
+         </th>
+         <th>
+          Max DD
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <span class="dot" style="background:#dd6345">
+          </span>
+          Motilal Oswal S&amp;P 500 Index
+         </td>
+         <td>
+          18.00
+         </td>
+         <td>
+          32.28
+         </td>
+         <td class="positive">
+          23.6%
+         </td>
+         <td class="positive">
+          +10.2%
+         </td>
+         <td>
+          0.44
+         </td>
+         <td>
+          18%
+         </td>
+         <td>
+          0.77
+         </td>
+         <td>
+          1.26
+         </td>
+         <td>
+          51.7%
+         </td>
+         <td class="negative">
+          &minus;19.9%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <span class="dot" style="background:#428fe0">
+          </span>
+          HDFC Nifty 50 Index
+         </td>
+         <td>
+          12.00
+         </td>
+         <td>
+          13.33
+         </td>
+         <td class="positive">
+          4.2%
+         </td>
+         <td class="negative">
+          &minus;0.7%
+         </td>
+         <td>
+          1.01
+         </td>
+         <td>
+          99%
+         </td>
+         <td>
+          0.06
+         </td>
+         <td>
+          0.09
+         </td>
+         <td>
+          51.6%
+         </td>
+         <td class="negative">
+          &minus;16.6%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <span class="dot" style="background:#28b38a">
+          </span>
+          UTI Nifty Next 50 Index
+         </td>
+         <td>
+          6.00
+         </td>
+         <td>
+          7.98
+         </td>
+         <td class="positive">
+          11.3%
+         </td>
+         <td class="positive">
+          +4.7%
+         </td>
+         <td>
+          1.24
+         </td>
+         <td>
+          75%
+         </td>
+         <td>
+          0.35
+         </td>
+         <td>
+          0.52
+         </td>
+         <td>
+          53.5%
+         </td>
+         <td class="negative">
+          &minus;26.5%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <span class="dot" style="background:#9660e9">
+          </span>
+          ICICI Prudential Nasdaq 100 Index
+         </td>
+         <td>
+          12.00
+         </td>
+         <td>
+          25.22
+         </td>
+         <td class="positive">
+          30.2%
+         </td>
+         <td class="positive">
+          +13.6%
+         </td>
+         <td>
+          0.56
+         </td>
+         <td>
+          14%
+         </td>
+         <td>
+          0.72
+         </td>
+         <td>
+          1.18
+         </td>
+         <td>
+          52.7%
+         </td>
+         <td class="negative">
+          &minus;30.0%
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <span class="dot" style="background:#efa12e">
+          </span>
+          Parag Parikh Flexi Cap
+         </td>
+         <td>
+          12.00
+         </td>
+         <td>
+          15.56
+         </td>
+         <td class="positive">
+          10.3%
+         </td>
+         <td class="positive">
+          +4.0%
+         </td>
+         <td>
+          0.70
+         </td>
+         <td>
+          78%
+         </td>
+         <td>
+          0.47
+         </td>
+         <td>
+          0.72
+         </td>
+         <td>
+          51.4%
+         </td>
+         <td class="negative">
+          &minus;17.9%
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <p>
+     </p>
+     <h2>
+      What the backtest illustrates
+     </h2>
+     <h3>
+      2021&ndash;2023: India-led performance
+     </h3>
+     <p>
+      The original analysis describes Indian equities as a key source of strength during portions of this period, while US markets faced inflation and rising interest rates.
+     </p>
+     <h3>
+      2021&ndash;2022: US market correction
+     </h3>
+     <p>
+      US index declines offered the simulated SIP opportunities to purchase additional units at lower NAVs.
+     </p>
+     <h3>
+      2023&ndash;2025: US market rebound
+     </h3>
+     <p>
+      Technology-led gains in US equities became a major driver of the simulated portfolio's ending value.
+     </p>
+     <h3>
+      2024&ndash;2026: Indian market consolidation
+     </h3>
+     <p>
+      The original commentary viewed relatively subdued Indian equity performance as an opportunity for ongoing SIP accumulation. Future returns from those accumulated units are not guaranteed.
+     </p>
+     <h2>
+      Lessons and implementation
+     </h2>
+     <p>
+      <strong>
+       Diversification:
+      </strong>
+      India and the US can experience different market cycles. Maintaining a predetermined allocation avoids relying on a prediction of which market will outperform.
+     </p>
+     <p>
+      <strong>
+       Rebalancing:
+      </strong>
+      The proposed rule is to rebalance back toward target fund weights on a planned annual date, rather than chase recent winners. The original post discussed trimming US exposure after a strong run to restore target weights.
+     </p>
+     <p>
+      <strong>
+       Practical constraints:
+      </strong>
+      Overseas-investment limits have periodically restricted SIPs in some Indian international funds. Alternative vehicles, including eligible GIFT City structures, may have different costs, tax treatment and accessibility and should be evaluated separately.
+     </p>
+     <h2>
+      Important limitations
+     </h2>
+     <p>
+      Displayed ending values total ₹94.37 lakh against ₹60 lakh of contributions. The reported 18% XIRR is taken from the author's post, not recalculated here. Fund-level alpha, beta and risk statistics depend on benchmark and measurement choices not supplied in the screenshot. This should not be presented as an independently audited track record.
+     </p>
+     <div class="source">
+      <a class="btn" href="https://www.facebook.com/share/p/1W17g7g9Es/" rel="noopener noreferrer" target="_blank">
+       Read Facebook backtest post &nearrow;
+      </a>
+      &nbsp;
+      <a href="2020-portfolio.html">
+       Read the original 2020 portfolio &rarr;
+      </a>
+     </div>
+     <div class="disclosure">
+      Backtested or simulated results do not represent real trades, and past performance does not predict future results. All funds and investments carry risk.
+     </div>
+    </article>
+   </div>
+   <footer class="footer" id="about">
+    <div>
+     <strong>
+      Safed Pigeon
+     </strong>
+     &middot; Independent investment research &amp; education
+     <br/>
+     <span class="note">
+      Educational content, not personalized investment advice. All equity investing involves risk.
+     </span>
+    </div>
+    <div>
+     <a href="https://www.facebook.com/safed.pigeon.5" rel="noopener noreferrer" target="_blank">
+      Facebook &nearrow;
+     </a>
+     &nbsp;&middot;&nbsp;
+     <a href="https://vestment.in" rel="noopener noreferrer" target="_blank">
+      Vestment &nearrow;
+     </a>
+     &nbsp;&middot;&nbsp;
+     <a href="./#research">
+      Research
+     </a>
+    </div>
+   </footer>
+  </main>
+ </body>
+</html>
